@@ -1,4 +1,6 @@
-# Benjamin — Financial Concierge & Coach
+# Ben — Financial Concierge & Coach
+
+Ben's personal website. The style is inspired by lifehappens.org (textured paper, colorful swirls, mint highlighter headlines, black pill buttons), with more sales features: a two-step quote form, a coverage calculator that feeds into the quote, urgency messaging, CTAs throughout and a sticky Call / Quote bar on phones.
 
 Static website (HTML/CSS/JS, no build step). Primary focus: **life insurance** and **group health benefits**, with a quote request form that emails leads to `Bpryb718@outlook.com`.
 
@@ -10,7 +12,7 @@ Static website (HTML/CSS/JS, no build step). Primary focus: **life insurance** a
 | `styles.css` | Styling |
 | `script.js` | Phone number setting, mobile menu, quote form submission |
 | `thank-you.html` | Page shown after a quote request is sent |
-| `assets/img/` | Put the headshot here as `headshot.jpg` |
+| `assets/img/` | Headshot and optional photos (see below) |
 | `assets/mdrt/` | Put the official MDRT logos here |
 
 ## How the quote form works
@@ -30,7 +32,9 @@ Optional: after activating, FormSubmit gives you a random alias (e.g. `https://f
   - `assets/mdrt/mdrt-qualifying-member.png`
 
   Follow MDRT's logo usage guidelines (correct year, no alterations).
-- [ ] **Full name / license info** — the site currently says "Benjamin". Add last name and state license numbers if desired.
+- [ ] **Optional photos** — the product and story cards show colored panels until photos are added. Drop licensed photos into `assets/img/` with these names: `product-life.jpg`, `product-group.jpg`, `product-ltc.jpg`, `product-business.jpg`, `story-family.jpg`, `story-business.jpg`, `story-retire.jpg` (landscape, ~1200px wide). Illustrations in the Life Happens style also work.
+- [ ] **Testimonials** — the "Real-life moments" cards are illustrative examples, not clients. Swap in real client reviews (with permission and compliance approval) for even more sales punch.
+- [ ] **Full name / license info** — the site currently says "Ben". Add last name and state license numbers if desired.
 - [ ] **Compliance review** — replace the bracketed placeholders in the footer disclosures (agency, broker-dealer, states licensed) and have compliance approve the site, especially the "financial concierge & coach" section that mentions retirement planning.
 
 ## Hosting (GitHub Pages)
