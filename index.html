@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Benjamin | Financial Concierge &amp; Coach — Life Insurance &amp; Group Health Benefits</title>
+  <meta name="description" content="Benjamin, your financial concierge and coach. 42 years helping families and businesses with life insurance and group health benefits. CLTC, LUTCF, MDRT Life and Qualifying Member.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark">B</span>
+        <span class="brand-text">
+          <strong>Benjamin</strong>
+          <small>Financial Concierge &amp; Coach</small>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="Main">
+        <a href="#life-insurance">Life Insurance</a>
+        <a href="#group-benefits">Group Benefits</a>
+        <a href="#about">About</a>
+        <a href="#resources">Resources</a>
+        <a href="#quote" class="btn btn-small">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO + QUOTE BOX ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Serving families &amp; businesses since 1984</p>
+          <h1>Protect the people who depend on you.</h1>
+          <p class="lead">
+            For 42 years, I've helped families secure their future with the right
+            <strong>life insurance</strong> and helped employers build
+            <strong>group health benefits</strong> their teams actually value.
+            Personal guidance, plain answers, no pressure.
+          </p>
+          <ul class="hero-points">
+            <li>42 years of experience (1984–2026)</li>
+            <li>Life &amp; Qualifying Member, Million Dollar Round Table (MDRT)</li>
+            <li>CLTC &amp; LUTCF designations</li>
+          </ul>
+          <div class="hero-call">
+            <span>Prefer to talk?</span>
+            <!-- TODO: replace with the dedicated advertising phone number once acquired -->
+            <a href="tel:+10000000000" class="phone-link" data-phone>(000) 000-0000</a>
+          </div>
+        </div>
+
+        <!-- QUOTE FORM — submissions are emailed via FormSubmit (see README) -->
+        <div class="quote-card" id="quote">
+          <h2>Request a Free Quote</h2>
+          <p class="quote-sub">Tell me a little about yourself and I'll personally follow up — usually within one business day.</p>
+
+          <form id="quote-form"
+                action="https://formsubmit.co/Bpryb718@outlook.com"
+                method="POST" novalidate>
+            <!-- FormSubmit settings -->
+            <input type="hidden" name="_subject" value="New quote request from website">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="">
+            <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <div class="field-row">
+              <div class="field">
+                <label for="first-name">First name</label>
+                <input id="first-name" name="First Name" type="text" autocomplete="given-name" required>
+              </div>
+              <div class="field">
+                <label for="last-name">Last name</label>
+                <input id="last-name" name="Last Name" type="text" autocomplete="family-name" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="Phone" type="tel" autocomplete="tel" required>
+            </div>
+
+            <div class="field">
+              <label for="interest">I'm interested in</label>
+              <select id="interest" name="Interested In" required>
+                <option value="" disabled selected>Choose one…</option>
+                <option>Life Insurance — Term</option>
+                <option>Life Insurance — Permanent / Whole Life</option>
+                <option>Life Insurance — Not sure yet</option>
+                <option>Group Health Benefits for my business</option>
+                <option>Long-Term Care</option>
+                <option>General financial review</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="contact-time">Best time to reach me <span class="optional">(optional)</span></label>
+              <select id="contact-time" name="Best Time to Contact">
+                <option value="">Any time</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Anything else? <span class="optional">(optional)</span></label>
+              <textarea id="message" name="Message" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-block">Get My Free Quote</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+            <p class="form-note">Your information is kept private and used only to respond to your request.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST BAR ============ -->
+    <section class="trust-bar" aria-label="Credentials">
+      <div class="container trust-inner">
+        <div class="trust-item"><span class="trust-num">42</span><span>Years of Experience</span></div>
+        <div class="trust-item"><span class="trust-num">1984</span><span>Serving Clients Since</span></div>
+        <div class="trust-item mdrt-slot">
+          <!-- Drop the official MDRT Life Member / Qualifying Member logo files into assets/mdrt/ (see README) -->
+          <img src="assets/mdrt/mdrt-life-member.png" alt="MDRT Life Member" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'logo-fallback',textContent:'MDRT Life Member'}))">
+        </div>
+        <div class="trust-item mdrt-slot">
+          <img src="assets/mdrt/mdrt-qualifying-member.png" alt="MDRT Qualifying Member" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'logo-fallback',textContent:'MDRT Qualifying Member'}))">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LIFE INSURANCE (PRIMARY) ============ -->
+    <section class="section" id="life-insurance">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Primary Focus</p>
+          <h2>Life Insurance</h2>
+          <p>The right policy replaces income, pays off debts, funds education and keeps your family in their home. I'll help you figure out how much you need, which type fits, and shop it for you.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 9.3-8 10-4.5-.7-8-5-8-10V6l8-4z"/></svg>
+            </div>
+            <h3>Term Life</h3>
+            <p>Affordable protection for a set period — 10, 20 or 30 years. Ideal while you're raising kids or paying down a mortgage.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-6 7 6v11M9 21v-6h6v6"/></svg>
+            </div>
+            <h3>Permanent &amp; Whole Life</h3>
+            <p>Lifelong coverage that can build cash value over time. Useful for estate planning, final expenses and leaving a legacy.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 7h18v13H3zM8 7V4h8v3M3 12h18"/></svg>
+            </div>
+            <h3>Business Life Insurance</h3>
+            <p>Key-person coverage and buy-sell funding that protect your business and partners if the unexpected happens.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.3-9C1 8.5 3.3 5 6.8 5c2 0 3.6 1.1 4.4 2.6h1.6C13.6 6.1 15.2 5 17.2 5 20.7 5 23 8.5 21.3 12 19 16.6 12 21 12 21z"/></svg>
+            </div>
+            <h3>Long-Term Care</h3>
+            <p>As a Certified in Long-Term Care (CLTC) professional, I help you plan for care costs so they don't drain your savings or burden your family.</p>
+          </article>
+        </div>
+
+        <div class="process">
+          <h3>How it works</h3>
+          <ol class="steps">
+            <li><span>1</span><div><strong>Conversation</strong><p>We talk about your family, goals and budget — no obligation.</p></div></li>
+            <li><span>2</span><div><strong>Needs analysis</strong><p>I calculate the coverage you actually need, not more.</p></div></li>
+            <li><span>3</span><div><strong>Compare options</strong><p>I shop multiple highly rated carriers and explain the trade-offs.</p></div></li>
+            <li><span>4</span><div><strong>Ongoing service</strong><p>I review your coverage as life changes — marriage, kids, retirement.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GROUP HEALTH BENEFITS (PRIMARY) ============ -->
+    <section class="section section-alt" id="group-benefits">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Primary Focus</p>
+          <h2>Group Health Benefits</h2>
+          <p>Attract and keep great people with a benefits package that fits your budget. Whether you have 2 employees or 200, I handle the design, enrollment and year-round support so you can run your business.</p>
+          <ul class="check-list">
+            <li>Group medical, dental &amp; vision</li>
+            <li>Group life &amp; disability coverage</li>
+            <li>Voluntary &amp; supplemental benefits</li>
+            <li>Plan design, renewals &amp; carrier negotiation</li>
+            <li>Employee enrollment meetings &amp; ongoing support</li>
+          </ul>
+          <a href="#quote" class="btn">Request a Benefits Review</a>
+        </div>
+        <div class="callout">
+          <p class="callout-quote">“Your employees shouldn't need a dictionary to understand their benefits. My job is to make it simple — for you and for them.”</p>
+          <p class="callout-name">— Benjamin</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BROADER PLANNING (subtle, compliance-friendly) ============ -->
+    <section class="section section-slim" id="planning">
+      <div class="container">
+        <div class="planning-box">
+          <h3>Your financial concierge &amp; coach</h3>
+          <p>Insurance is the foundation, but it works best as part of a bigger picture. As your concierge, I'm happy to talk through how your coverage fits alongside your retirement and long-term planning goals, and connect you with the right resources when you need them.<sup>*</sup></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section-alt" id="about">
+      <div class="container about-grid">
+        <div class="about-photo">
+          <!-- Replace assets/img/headshot.jpg with the AI-cleaned headshot -->
+          <img src="assets/img/headshot.jpg" alt="Benjamin, financial concierge and coach"
+               onerror="this.parentElement.classList.add('no-photo'); this.remove();">
+          <div class="photo-badge"><strong>42</strong><span>years</span></div>
+        </div>
+        <div>
+          <p class="eyebrow">About Benjamin</p>
+          <h2>Four decades of putting clients first.</h2>
+          <p>I started in this business in 1984 with a simple belief: people deserve an advisor who listens first and sells second. Forty-two years later, that's still how I work.</p>
+          <p>I've guided thousands of conversations about the things that matter most — protecting a spouse, providing for children, keeping a business running and taking care of employees. I think of myself as a concierge and a coach: I'll handle the details, explain your options in plain English, and stay with you for the long run.</p>
+
+          <h3 class="designations-title">Designations &amp; Memberships</h3>
+          <div class="designations">
+            <div class="designation">
+              <strong>CLTC</strong>
+              <span>Certified in Long-Term Care</span>
+            </div>
+            <div class="designation">
+              <strong>LUTCF</strong>
+              <span>Life Underwriter Training Council Fellow</span>
+            </div>
+            <div class="designation">
+              <strong>MDRT</strong>
+              <span>Life Member &amp; Qualifying Member, Million Dollar Round Table</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MDRT / RESOURCES ============ -->
+    <section class="section" id="resources">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Resources</p>
+          <h2>What MDRT membership means for you</h2>
+          <p>The Million Dollar Round Table is a global association of leading life insurance and financial professionals. Membership is earned by meeting high production standards and committing to a strict Code of Ethics. Life membership recognizes sustained qualification over many years.</p>
+        </div>
+
+        <div class="card-grid three">
+          <article class="card">
+            <h3>Held to a higher standard</h3>
+            <p>MDRT members pledge to place clients' interests first, maintain the highest level of professional knowledge, and fully disclose all pertinent facts.</p>
+          </article>
+          <article class="card">
+            <h3>Always learning</h3>
+            <p>Members have access to world-class education and best practices from top advisors across 70+ countries — knowledge I bring back to every client.</p>
+          </article>
+          <article class="card">
+            <h3>Giving back</h3>
+            <p>Through the MDRT Foundation, members support charitable causes in their communities and around the world.</p>
+          </article>
+        </div>
+
+        <div class="resource-links">
+          <h3>Helpful links</h3>
+          <ul>
+            <li><a href="https://www.mdrt.org/" target="_blank" rel="noopener">Million Dollar Round Table (MDRT)</a></li>
+            <li><a href="https://www.mdrt.org/about/code-of-ethics/" target="_blank" rel="noopener">MDRT Code of Ethics</a></li>
+            <li><a href="https://www.mdrtfoundation.org/" target="_blank" rel="noopener">MDRT Foundation</a></li>
+            <li><a href="https://lifehappens.org/insurance-overview/life-insurance/calculate-your-needs/" target="_blank" rel="noopener">Life insurance needs calculator (Life Happens)</a></li>
+          </ul>
+        </div>
+
+        <div class="faq">
+          <h3>Common questions</h3>
+          <details>
+            <summary>How much life insurance do I need?</summary>
+            <p>A common starting point is 10–15 times your annual income, but the real answer depends on your debts, your family's future expenses and what you already have. I'll walk through it with you for free.</p>
+          </details>
+          <details>
+            <summary>Is term or permanent life insurance better?</summary>
+            <p>Neither is "better" — they solve different problems. Term is cost-effective protection for a specific period; permanent coverage lasts your whole life and may build cash value. Many families use a combination.</p>
+          </details>
+          <details>
+            <summary>Can a small business offer group health benefits?</summary>
+            <p>Yes. Many carriers offer group plans for businesses with as few as two employees, and there are often more options than owners expect.</p>
+          </details>
+          <details>
+            <summary>Does it cost anything to talk with you?</summary>
+            <p>No. The initial conversation and quote are completely free with no obligation.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta">
+      <div class="container cta-inner">
+        <div>
+          <h2>Let's make sure your family is protected.</h2>
+          <p>A short conversation today can bring real peace of mind.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="#quote" class="btn btn-light">Get a Free Quote</a>
+          <a href="tel:+10000000000" class="btn btn-outline-light" data-phone>(000) 000-0000</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Benjamin</p>
+        <p>Financial Concierge &amp; Coach<br>CLTC, LUTCF · MDRT Life &amp; Qualifying Member</p>
+      </div>
+      <div>
+        <p class="footer-head">Contact</p>
+        <p>
+          <a href="tel:+10000000000" data-phone>(000) 000-0000</a><br>
+          <a href="mailto:Bpryb718@outlook.com">Bpryb718@outlook.com</a>
+        </p>
+      </div>
+      <div>
+        <p class="footer-head">Services</p>
+        <p><a href="#life-insurance">Life Insurance</a><br><a href="#group-benefits">Group Health Benefits</a><br><a href="#life-insurance">Long-Term Care</a></p>
+      </div>
+    </div>
+    <div class="container disclosures">
+      <!-- COMPLIANCE: have your broker-dealer / carrier compliance department review and replace this text before launch -->
+      <p><sup>*</sup>Insurance products are offered through [Agency / Carrier Name]. Securities and investment advisory services, where applicable, are offered through [Broker-Dealer / RIA Name], Member FINRA/SIPC. [Agency Name] is not affiliated with [Broker-Dealer Name]. Not all products are available in all states. Licensed in [States].</p>
+      <p>This website is for informational purposes only and is not an offer to sell or a solicitation of an offer to buy any insurance or investment product. Guarantees are based on the claims-paying ability of the issuing insurance company. MDRT membership is not an endorsement of any individual's services. The MDRT name and logos are trademarks of the Million Dollar Round Table and are used with permission.</p>
+      <p>&copy; <span id="year">2026</span> Benjamin. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
