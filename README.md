@@ -1,6 +1,6 @@
 # Ben — Financial Concierge & Coach
 
-Ben's personal website. The style is inspired by lifehappens.org (textured paper, colorful swirls, mint highlighter headlines, black pill buttons), with more sales features: a two-step quote form, a coverage calculator that feeds into the quote, urgency messaging, CTAs throughout and a sticky Call / Quote bar on phones.
+Ben's personal website. The layout is inspired by lifehappens.org (textured paper, swirls, highlighter headlines, pill buttons) in Ben's brand colors: navy `#142845`, slate `#294967`, gold `#D1AE6E` and cream `#F7F5F0`. Life insurance is positioned as **living insurance**, with a dedicated living benefits section. It adds sales features: a two-step quote form, a coverage calculator that feeds into the quote, urgency messaging, CTAs throughout and a sticky Call / Quote bar on phones.
 
 Static website (HTML/CSS/JS, no build step). Primary focus: **life insurance** and **group health benefits**, with a quote request form that emails leads to `Bpryb718@outlook.com`.
 
@@ -10,7 +10,8 @@ Static website (HTML/CSS/JS, no build step). Primary focus: **life insurance** a
 |---|---|
 | `index.html` | The whole site (hero + quote form, life insurance, group benefits, about, MDRT resources, FAQ) |
 | `styles.css` | Styling |
-| `script.js` | Phone number setting, mobile menu, quote form submission |
+| `script.js` | Phone number setting, mobile menu, calculator, quote form submission |
+| `chatbot.js` | Chat assistant: explains coverage types and living benefits, and walks visitors through the calculator or a quote request (sent through the same quote form). Edit `TOPICS` to change its answers. |
 | `thank-you.html` | Page shown after a quote request is sent |
 | `assets/img/` | Headshot and optional photos (see below) |
 | `assets/mdrt/` | Put the official MDRT logos here |
