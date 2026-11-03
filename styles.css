@@ -359,6 +359,9 @@ input[type=range] { width: 100%; accent-color: var(--ink); height: 28px; }
   body { font-size: 16px; padding-bottom: 76px; }
   .brand { flex: 0 1 auto; min-width: 0; }
   .brand-text small { white-space: normal; font-size: .66rem; }
+  .brand-text strong { font-size: 1.2rem; white-space: nowrap; }
+  .brand { gap: 10px; }
+  .brand-mark { width: 40px; height: 40px; font-size: 1.3rem; }
   .promo-inner { justify-content: center; text-align: center; }
   .promo-bar a { display: none; }
   .hero { padding: 40px 0 90px; }
