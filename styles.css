@@ -260,7 +260,7 @@ input[type=range] { width: 100%; accent-color: var(--ink); height: 28px; }
 .living .mark { color: var(--ink); }
 .living .section-head p { color: #cbd5e1; }
 .living .section-head strong { color: var(--white); }
-.living-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin-bottom: 40px; }
+.living-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-bottom: 40px; }
 .living-card { background: var(--teal); border-radius: var(--radius); padding: 28px 24px; border: 1px solid rgba(255,255,255,.12); transition: transform .2s, box-shadow .2s; }
 .living-card:hover { transform: translateY(-4px); box-shadow: 0 0 0 2px var(--mint); }
 .living-card .why-icon { background: var(--mint); }
@@ -282,6 +282,17 @@ input[type=range] { width: 100%; accent-color: var(--ink); height: 28px; }
 .living .btn-primary { background: var(--mint); color: var(--ink); box-shadow: 0 8px 0 -2px var(--white); }
 .living .btn-primary:hover { background: var(--yellow); }
 .living .disclaimer-sm { color: #93a3b8; max-width: 860px; margin-left: auto; margin-right: auto; }
+
+.living-know { background: var(--teal); border-radius: var(--radius); padding: 28px 32px; margin-bottom: 36px; }
+.living-know h3 { font-size: 1.15rem; text-transform: uppercase; letter-spacing: .06em; }
+.living-know .ticks { columns: 2; column-gap: 40px; margin: 0; }
+.living-know .ticks li { color: #e3e9f0; break-inside: avoid; font-weight: 500; }
+.ltc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-bottom: 44px; }
+.ltc-card { position: relative; background: var(--white); border: 2px solid var(--ink); border-radius: var(--radius); padding: 30px 26px; }
+.ltc-card p { color: var(--muted); font-weight: 500; font-size: .96rem; }
+.ltc-card .ltc-fit { background: var(--paper); border-radius: 12px; padding: 12px 14px; margin: 0; color: var(--ink); font-size: .9rem; }
+.ltc-featured { box-shadow: 8px 8px 0 var(--mint); }
+.ltc-card .badge { left: auto; right: 18px; top: 18px; }
 
 /* Chat assistant */
 .chat-launcher { position: fixed; right: 22px; bottom: 22px; z-index: 70; display: flex; align-items: center; gap: 10px; background: var(--ink); color: var(--white); border: 0; border-radius: 999px; padding: 14px 20px; font: inherit; font-weight: 800; cursor: pointer; box-shadow: 0 12px 30px rgba(20,40,69,.35), 0 0 0 3px var(--mint); transition: transform .15s; }
@@ -326,6 +337,8 @@ input[type=range] { width: 100%; accent-color: var(--ink); height: 28px; }
   .hero-grid, .calc-grid, .about-grid, .mdrt-grid { grid-template-columns: 1fr; gap: 40px; }
   .why-grid, .story-grid, .living-steps { grid-template-columns: 1fr; }
   .living-grid { grid-template-columns: repeat(2, 1fr); }
+  .ltc-grid { grid-template-columns: 1fr; }
+  .living-know .ticks { columns: 1; }
   .story { min-height: 300px; }
   .about-photo { max-width: 380px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }

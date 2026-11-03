@@ -30,22 +30,23 @@
     living: {
       text: [
         "Living benefits let you use part of your death benefit <b>early</b> if you're diagnosed with a qualifying illness:",
-        "• <b>Critical illness</b>: e.g. heart attack, stroke or cancer<br>• <b>Chronic illness</b>: unable to do 2 of 6 daily activities, like bathing or dressing<br>• <b>Terminal illness</b>: a limited life expectancy",
-        "You decide how to use the money, whether that's medical bills, the mortgage or lost income. Whatever isn't used still goes to your beneficiaries. Riders vary by carrier and state, so Ben can show you which policies include them.",
+        "• <b>Critical illness</b>: e.g. heart attack, stroke or cancer<br>• <b>Chronic illness</b>: unable to do 2 of 6 daily activities, like bathing or dressing<br>• <b>Terminal illness</b>: a limited life expectancy<br>• <b>Long-term care rider</b>: care at home, assisted living or a nursing facility",
+        "You decide how to use the money, whether that's medical bills, the mortgage or lost income. If you never need it, your beneficiaries get the full death benefit. Some riders are built in at no extra cost and others add to your premium, so Ben can show you which policies include them.",
       ],
-      next: [["Get a quote with living benefits", "quote"], ["Term vs. permanent", "types"], ["Main menu", "menu"]],
+      next: [["Get a quote with living benefits", "quote"], ["What if I never use it?", "rop"], ["Main menu", "menu"]],
     },
     types: {
       text: [
         "<b>Term life</b> covers you for a set period (10, 20 or 30 years). It's the most affordable way to get a lot of coverage while kids are young or the mortgage is big.",
         "<b>Permanent life</b> (whole or universal) lasts your whole life and can build cash value you can borrow against. It costs more, but it's useful for estate planning, final expenses and leaving a legacy.",
-        "Many families combine both. Ben can compare options side by side for you.",
+        "Many families combine both. Many term policies can also be <b>converted to permanent</b> later without a new medical exam, as long as you do it within the conversion period. Ben can compare options side by side for you.",
       ],
       next: [["Estimate my coverage", "calc"], ["Get a free quote", "quote"], ["Main menu", "menu"]],
     },
     group: {
       text: [
         "Good benefits help you hire and keep great people. Ben sets up group plans for businesses with as few as 2 employees: medical, dental, vision, group life, disability and voluntary benefits.",
+        "He can also add voluntary benefits employees can choose themselves, such as accident, critical illness, hospital indemnity and disability coverage, often at little or no cost to the employer.",
         "He handles plan design, renewals, carrier negotiation and employee enrollment, so you can focus on running the business.",
       ],
       next: [["Request a benefits review", "quote-group"], ["Main menu", "menu"]],
@@ -53,7 +54,8 @@
     ltc: {
       text: [
         "Long-term care pays for help with daily living, at home or in a facility. Those costs usually aren't covered by health insurance and can quickly drain savings.",
-        "Ben is <b>Certified in Long-Term Care (CLTC)</b> and can walk you through traditional LTC policies and hybrid life + LTC plans.",
+        "There are three main ways to plan for it:<br>• <b>Traditional LTC</b>: dedicated care coverage, the most care per premium dollar<br>• <b>Hybrid life + LTC</b>: pays for care if you need it, or a benefit to your family if you don't<br>• <b>LTC rider</b>: adds care benefits to a life policy you already need",
+        "Ben is <b>Certified in Long-Term Care (CLTC)</b> and can help you compare them.",
       ],
       next: [["Get an LTC quote", "quote-ltc"], ["What are living benefits?", "living"], ["Main menu", "menu"]],
     },
@@ -63,18 +65,34 @@
       ],
       next: [["Get a free quote", "quote"], ["Main menu", "menu"]],
     },
+    rop: {
+      text: [
+        "If you never use your living benefits, your beneficiaries receive the full death benefit. Nothing is lost.",
+        "Some policies also offer a <b>return-of-premium rider</b>: if you outlive your term or no longer need coverage, you can get some or all of your premiums back, depending on the policy.",
+      ],
+      next: [["Get a free quote", "quote"], ["Main menu", "menu"]],
+    },
+    final: {
+      text: [
+        "Yes, there are options. <b>Final expense</b> whole life policies are designed for people roughly 50 to 80. They have smaller coverage amounts, premiums that never go up, and simple applications. Some are guaranteed acceptance, with no health questions.",
+        "They help cover funeral costs and final bills so your family isn't left with them.",
+      ],
+      next: [["Get a final expense quote", "quote-family"], ["Main menu", "menu"]],
+    },
     menu: { text: ["What else can I help with?"], next: MAIN_MENU },
   };
 
   const KEYWORDS = [
+    [/final expense|funeral|burial|older|senior|health (issue|problem|condition)s?|guarantee/i, "final"],
     [/quote|price|cost|rate|apply|sign ?up|buy/i, "quote"],
-    [/how much|calculat|estimate|need\b/i, "calc"],
-    [/living|critical|chronic|terminal|accelerat|illness|cancer|stroke|heart/i, "living"],
-    [/term|whole|permanent|universal|cash value|types?/i, "types"],
-    [/group|employ|business|company|staff|team|health/i, "group"],
+    [/how much|calculat|estimate|coverage amount/i, "calc"],
     [/long[- ]?term|ltc|nursing|care/i, "ltc"],
+    [/never use|return of premium|money back|get (my )?premiums? back|waste/i, "rop"],
+    [/living|critical|chronic|terminal|accelerat|illness|cancer|stroke|heart/i, "living"],
+    [/term|whole|permanent|universal|cash value|convert|types?/i, "types"],
+    [/group|employ|business|company|staff|team|health/i, "group"],
     [/who|ben\b|experience|mdrt|cltc|lutcf|about/i, "ben"],
-    [/why|need it|worth|important/i, "why"],
+    [/why|need (life )?insurance|need it|worth|important/i, "why"],
     [/menu|help|start|options/i, "menu"],
   ];
 
@@ -217,6 +235,7 @@
       case "quote": return startQuote();
       case "quote-group": return startQuote("Group Health Benefits for my business");
       case "quote-ltc": return startQuote("Long-Term Care");
+      case "quote-family": return startQuote("Life Insurance for my family");
       case "quote-calc":
         document.getElementById("estimate-field").value = document.getElementById("c-result").textContent;
         return startQuote("Life Insurance for my family");
