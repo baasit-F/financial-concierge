@@ -62,7 +62,7 @@ p { margin: 0 0 1em; }
 
 /* Header */
 .site-header { position: sticky; top: 0; z-index: 50; background: var(--white); box-shadow: 0 4px 18px rgba(20,40,69,.07); }
-.header-inner { display: flex; align-items: center; justify-content: space-between; height: 80px; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; height: 80px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; flex: none; }
 .brand-mark { width: 46px; height: 46px; border-radius: 50%; background: var(--ink); color: var(--white); font-size: 1.5rem; font-weight: 900; display: grid; place-items: center; position: relative; }
 .brand-mark::after { content: ""; position: absolute; right: -2px; bottom: 2px; width: 12px; height: 12px; border-radius: 50%; background: var(--mint); border: 2px solid var(--white); }
@@ -342,6 +342,10 @@ input[type=range] { width: 100%; accent-color: var(--ink); height: 28px; }
   .story { min-height: 300px; }
   .about-photo { max-width: 380px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+/* Mid-size screens: phone is already in the top bar, so drop it from the menu to keep spacing */
+@media (min-width: 1261px) and (max-width: 1440px) {
+  .site-nav .nav-phone { display: none; }
 }
 @media (max-width: 1260px) {
   .nav-toggle { display: block; }
