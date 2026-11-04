@@ -228,6 +228,7 @@ input[type=range] { width: 100%; accent-color: var(--ink); height: 28px; }
 .ethics-list li { counter-increment: ethic; position: relative; padding-left: 46px; color: #e3e9f0; font-weight: 500; line-height: 1.5; }
 .ethics-list li::before { content: counter(ethic); position: absolute; left: 0; top: 0; width: 32px; height: 32px; border-radius: 50%; background: var(--mint); color: var(--ink); font-weight: 900; display: grid; place-items: center; }
 .ethics-source { margin: 24px 0 0; font-size: .78rem; color: #93a3b8; }
+.ethics-source a { color: #c9d3df; }
 
 .mdrt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
 .mdrt-grid > div > p { color: var(--muted); font-weight: 500; }
