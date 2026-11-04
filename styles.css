@@ -219,6 +219,16 @@ input[type=range] { width: 100%; accent-color: var(--ink); height: 28px; }
 .cred span { font-size: .8rem; color: var(--muted); font-weight: 600; line-height: 1.35; display: block; }
 
 /* MDRT + FAQ */
+.ethics { margin-top: 56px; background: var(--ink); color: var(--white); border-radius: var(--radius); padding: 40px 44px; }
+.ethics-head { max-width: 760px; margin-bottom: 26px; }
+.ethics .kicker { color: var(--mint); }
+.ethics h3 { color: var(--white); font-size: clamp(1.5rem, 2.6vw, 2rem); }
+.ethics-head p { color: #cbd5e1; font-weight: 500; margin: 0; }
+.ethics-list { list-style: none; counter-reset: ethic; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 36px; }
+.ethics-list li { counter-increment: ethic; position: relative; padding-left: 46px; color: #e3e9f0; font-weight: 500; line-height: 1.5; }
+.ethics-list li::before { content: counter(ethic); position: absolute; left: 0; top: 0; width: 32px; height: 32px; border-radius: 50%; background: var(--mint); color: var(--ink); font-weight: 900; display: grid; place-items: center; }
+.ethics-source { margin: 24px 0 0; font-size: .78rem; color: #93a3b8; }
+
 .mdrt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
 .mdrt-grid > div > p { color: var(--muted); font-weight: 500; }
 .links { display: flex; flex-wrap: wrap; gap: 10px 22px; }
@@ -341,6 +351,7 @@ input[type=range] { width: 100%; accent-color: var(--ink); height: 28px; }
   .why-grid, .story-grid, .living-steps { grid-template-columns: 1fr; }
   .living-grid { grid-template-columns: repeat(2, 1fr); }
   .ltc-grid { grid-template-columns: 1fr; }
+  .ethics-list { grid-template-columns: 1fr; }
   .living-know .ticks { columns: 1; }
   .story { min-height: 300px; }
   .about-photo { max-width: 380px; }
@@ -382,6 +393,7 @@ input[type=range] { width: 100%; accent-color: var(--ink); height: 28px; }
   .photo-badge { right: 10px; width: 96px; height: 96px; }
   .photo-badge strong { font-size: 2rem; }
   .faq { padding: 18px; }
+  .ethics { padding: 28px 20px; }
   .calc-result strong { font-size: 1.7rem; }
   .mobile-cta { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: var(--white); box-shadow: 0 -6px 20px rgba(20,40,69,.15); }
   .mobile-cta .btn { padding: 14px 10px; box-shadow: none; }
